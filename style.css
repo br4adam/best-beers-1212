@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary-color: #ffeedf;
+  --secondary-color: #145434;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Space Grotesk", Arial, Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid var(--secondary-color);
+  padding: 0 1rem;
+}
+
+header h1 {
+  font-size: 36px;
+}
+
+header .material-icons {
+  font-size: 36px;
+  color: var(--secondary-color);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  margin: 2rem 0;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  position: relative;
+  padding: 2rem;
+  flex: 0 1 450px;
+}
+
+.card .circle {
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary-color);
+}
+
+.card h2 {
+  font-weight: 400;
+  font-size: 36px;
+  height: 7rem;
+}
+
+.card p {
+  font-size: 18px;
+}
+
+.card > p:first-of-type {
+  border-top: 1px solid var(--primary-color);
+  padding-top: 1rem;
+}
+
+.card > p:last-of-type {
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.card .button {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -1rem;
+  right: -1rem;
+  border: 2px solid var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.card .button p {
+  font-size: 14px;
+}
+
+.card .button a {
+  position: absolute;
+  right: 0.5rem;
+}
+
+.card .button .material-icons {
+  font-size: 36px;
+  color: var(--secondary-color);
+}
