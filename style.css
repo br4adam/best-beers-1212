@@ -54,7 +54,7 @@ main {
   color: var(--primary-color);
   position: relative;
   padding: 2rem;
-  flex: 0 1 450px;
+  flex: 0 1 460px;
 }
 
 .card .circle {
@@ -107,6 +107,12 @@ main {
   color: var(--secondary-color);
 }
 
+.card .button:hover {
+    border: 2px solid var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
 .card .button p {
   font-size: 14px;
 }
@@ -119,4 +125,8 @@ main {
 .card .button .material-icons {
   font-size: 36px;
   color: var(--secondary-color);
+}
+
+.card .button:hover .material-icons {
+  color: var(--primary-color);
 }
